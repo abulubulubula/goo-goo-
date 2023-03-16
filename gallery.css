@@ -1,0 +1,54 @@
+
+body {background-color: #000000; overflow-x: hidden; font-family: Arial, Helvetica, sans-serif; margin: 0;}
+.flex { display: -webkit-flex; display: flex; -webkit-flex-direction: row;  flex-direction: row; -webkit-justify-content: flex-start; justify-content: flex-start;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul li a:hover {
+      color:#0f0
+  }
+  
+  .active {
+    background-color: none;
+  }
+  .active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.slider-wrapper div {position: relative;}
+.slider-wrapper {margin-top: 15vw;  margin-left: 11vw;}
+.slide-image {height: 30vw;}
+.slide-image img {width: 30vw; cursor: pointer;}
+.slide-content {width: 25vw; color: #fff; padding:3vw 18vw 3vw 9vw;}
+.slide-date {color: #ffffff; font-size: 1.1vw; font-weight: 400; letter-spacing: 0.1vw; padding-bottom: 1.4vw;}
+.slide-title {font-size: 1.2vw; font-weight: 400; letter-spacing: 0.1vw; line-height: 1.55vw; padding-bottom: 1.8vw;}
+.slide-text {font-size: 0.80vw; line-height: 1.2vw; opacity: 0.8; padding-bottom: 4vw;}
+.slide-more {font-weight: 400; letter-spacing: 0.1vw; float: left; font-size: 0.9vw;}
+.slide-bullet {width: 0.5vw; height: 0.5vw; background-color: #ffffff; border-radius: 200%; position: relative; margin-left: 1.2vw;}
+.slide-nav {margin-left: 64vw; margin-top: -5.5vw;}
+
+div.overlay-blue {width: 100%; height: 100%; position: absolute; top: 0; transition: 0.5s ease all;}
+div.overlay-blue:hover {background-color: rgba(0, 0, 0, 0.5);}
+
+.arrows{width: 3.5vw; margin-top: -5.8vw; margin-left: 72vw; position: relative;}
+.arrow {display: inline-block; position: absolute; width: 1.2vw; height: 1.2vw; background: transparent; text-indent: -9999px; border-top: 0.15vw solid #fff; border-left: 0.15vw solid #fff; transition: all .1s ease-in-out; text-decoration: none; color: transparent;
+}
+.arrow:hover {border-color: #f24d79; border-width: 0.25vw;
+}
+.arrow:before {display: block; height: 200%; width: 200%; margin-left: -50%; margin-top: -50%; content: ""; transform: rotate(45deg);}
+.arrow.prev {transform: rotate(-45deg); left: 0;}
+.arrow.next {transform: rotate(135deg); right: 0;}

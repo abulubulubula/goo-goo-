@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover {
+    color:#0f0
+}
+
+.active {
+  background-color: none;
+}
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 20%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 40%;
+  border: 2px solid #fff;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 425px;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+#myTable th, #myTable td {
+  text-align: center;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 2px solid #ffffff;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #222222;
+}
+
+.hover_im {
+            width: 100px;
+            height: 150px;
+            position: sticky;
+            top: -85px;
+            left: 116px;
+            z-index: -100x;
+            display: none;
+        }
+        .image_wrapper:hover > .hover_im {
+            display: block;
+        }
+
+</style>
+</head>
+<body>
+
+    <ul>
+        <li style="float:right"><a class="active" href="/googoo.html">BACK</a></li>
+      </ul>
+      <div>
+
+<h2 style="color: #fff;">GooGoo's Brand Recomnendations</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="🔍 Search for country" title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:50%;">Country of origin</th>
+    <th style="width:50%;">Brand</th>
+  </tr>
+  <tr>
+    <td>UK</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://blackeyewear.com/" target="_blank">Black</a>
+        <div class="hover_im"><img src="images/black1.png"></div></td>
+  </tr>
+  <tr>
+    <td>UK</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://tdkent.com/pages/about">TD KENT</a>
+        <div class="hover_im"><img src="images/tdk.png"></div></td>
+  </tr>
+  <tr>
+    <td>Viet Nam</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://en.seeson.vn/" target="_blank">SEESON</a>
+        <div class="hover_im"><img src="images/seeson.png"></div></td>
+  </tr>
+  <tr>
+    <td>US</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://moscot.com/" target="_blank">Moscot</a>
+        <div class="hover_im"><img src="images/moscot.png"></div></td>
+  </tr>
+  <tr>
+    <td>Germany</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.kuboraum.com/" target="_blank">Kuboraum</a>
+        <div class="hover_im"><img src="images/kuboraum.png"></div></td>
+  </tr>
+  <tr>
+    <td>US</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.jacquesmariemage.com/" target="_blank">Jaques Marie Mage</a>
+        <div class="hover_im"><img src="images/jmm.png"></div></td>
+  </tr>
+  <tr>
+    <td>Italy</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.hapter.it/" target="_blank">Hapter</a>
+        <div class="hover_im"><img src="images/hapter.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.matsuda.com/en-ca">Matsuda</a>
+        <div class="hover_im"><img src="images/matsuda.png"></div></td>
+  </tr>
+  <tr>
+    <td>France</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.rigards.com/" target="_blank">RIGARDS</a>
+        <div class="hover_im"><img src="images/rigards.png"></div></td>
+  </tr>
+  <tr>
+    <td>South Korea</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.gentlemonster.com/us/" target="_blank">Gentle Monster</a>
+        <div class="hover_im"><img src="images/gm.png"></div></td>
+  </tr>
+  <tr>
+    <td>Barcelona</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.folc-eyewear.com/" target="_blank">folc</a>
+        <div class="hover_im"><img src="images/folc.png"></div></td>
+  </tr>
+  <tr>
+    <td>South Korea</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://lasheyewear.com/" target="_blank">lash</a>
+        <div class="hover_im"><img src="images/lash.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://effector-eyewear.com/pages/philosophy">EFFECTOR</a>
+        <div class="hover_im"><img src="images/effector.png"></div></td>
+  </tr>
+  <tr>
+    <td>South Korea</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://gingereyewear.imweb.me/" target="_blank">Ginger Eyewear</a>
+        <div class="hover_im"><img src="images/ginger.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.tvropt.eu/" target="_blank">True Vintage Rivival</a>
+        <div class="hover_im"><img src="images/tvr.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://eyevan.com/en/" target="_blank">EYEVAN</a>
+        <div class="hover_im"><img src="images/eyevan.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.factory900.jp/en/" target="_blank">FACTORY900</a>
+        <div class="hover_im"><img src="images/factory.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.masunaga1905.com/en"target="_blank">Masunaga</a>
+        <div class="hover_im"><img src="images/matsunaga.png"></div></td>
+  </tr>
+  <tr>
+    <td>US</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://tartoptical.com/" target="_blank">Tart Optical Enterprises</a>
+        <div class="hover_im"><img src="images/tart.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="http://www.ayame-id.jp/" target="_blank">ayame</a>
+        <div class="hover_im"><img src="images/ayame.png"></div></td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.kamemannen.com/en" target="_blank">KameManNen</a>
+        <div class="hover_im"><img src="images/kame.png"></div></td>
+  </tr>
+  <tr>
+    <td>UK</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.olivergoldsmith.com/" target="_blank">Oliver Goldsmith</a>
+        <div class="hover_im"><img src="images/pliver.png"></div></td>
+  </tr>
+  <tr>
+    <td>France</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.gouverneur-audigier.com/" target="_blank">Gouverneur Audigier</a>
+        <div class="hover_im"><img src="images/gou.png"></div></td>
+  </tr>
+  <tr>
+    <td>Italy</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://tavat-eyewear.com/soupcan/?v=3e8d115eb4b3" target="_blank">TAVAT</a>
+        <div class="hover_im"><img src="images/tavat.png"></div></td>
+  </tr>
+  <tr>
+    <td>France</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.maisonbonnet.com/en" target="_blank">Maison Bonnet</a>
+        <div class="hover_im"><img src="images/maison.png"></div></td>
+  </tr>
+  <tr>
+    <td>Italy</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.lgrworld.com/en/brand-inspired-by-africa/" target="_blank">L.G.R</a>
+        <div class="hover_im"><img src="images/l.g.r.png"></div></td>
+  </tr>
+  <tr>
+    <td>UK</td>
+    <td><div class="image_wrapper"><a style="color: #fff;" href="https://www.cutlerandgross.com/ca/?___store=cutler_store_ca&___from_store=default" target="_blank">Cutler and Gross</a>
+        <div class="hover_im"><img src="images/cult.png"></div></td>
+  </tr>
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
+
+

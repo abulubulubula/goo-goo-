@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GooGoo</title>
+    <link rel="stylesheet" href="EYE.css">
+</head>
+<style>
+body {
+    background-color: #000000;
+}
+/* The ABOUT open (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #f24d79;
+  width: 50%;
+}
+
+/* Close Button */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #f24d79;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+    width: 250px;
+    padding: 20px;
+}
+
+.grid-container {
+    color: #ffffff;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #000000;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+.grid-container a {
+ color: #ffffff;
+ text-decoration: none;
+}
+
+.grid-container a:hover {
+    color:#f85994
+}
+</style>
+<body>
+<div>
+    <img class="logo" src="images/goologo.svg" alt="logo">
+
+<button style="float: right;font-size: 15px; margin-right: 50px; margin-top: 40px;" id="myBtn">ABOUT</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="font-family: Arial, Helvetica, sans-serif;">GooGoo is here to provide resources and information 
+        about eyewear. I am your supportive buddy, who encourages everyone to dress up however they want and 
+        find their personal style.<br /><br>Sometimes we look at glasses as a necessity rather than an accessory. But GooGoo is all about playing around with the array of fun, stylish frames. I am here to assist you in finding the perfect eyewear that will set the tone for the perfect outfit.</p>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+
+</div>
+<div class="container">
+    <div class="eyes">
+        <div class="pupil">
+
+        </div>
+    </div>
+
+    <div class="eyes">
+        <div class="pupil">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="grid-container">
+    <div class="grid-item">
+        <small>📰</small><br><a style="font-size: 50px;" href="/info.html">Information</a></div>
+    <div class="grid-item">
+        <small></small><br><a style="font-size: 50px;" href=""></a></div>
+    <div class="grid-item">
+        <small>😎</small><br><a style="font-size: 50px;" href="/brand.html">Brands</a></div>
+    <div class="grid-item">
+        <small>🤓</small><br><a style="font-size: 50px;" href="/gallery.html">Spotted</a></div>
+    <div class="grid-item">
+        <small></small><br><a style="font-size: 50px;" href=""></a></div>
+     <div class="grid-item">
+        <small>💇</small><br><a style="font-size: 50px;" href="/dressup.html">Dress Up Sites</a></div>
+  </div>
+
+<script src="eye.js"></script>
+
+</body>
+</html>
